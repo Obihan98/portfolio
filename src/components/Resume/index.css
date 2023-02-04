@@ -1,0 +1,31 @@
+.resume{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    color: #fff;
+}
+
+.middle {
+    width: 45%;
+    margin: auto;
+} 
+
+.date-row{
+    position: relative;
+    text-align: left;
+}
+
+.left{
+    display: inline;
+}
+
+.right{
+    margin-top: 0px;
+    display: inline;
+    position: absolute;
+    right: 0px;
+}
+
+.spec{
+    margin-top: 0;
+}
