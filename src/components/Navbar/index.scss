@@ -5,6 +5,7 @@
     left: 0;
     z-index: var(--z-fixed);
     background: linear-gradient(to top, transparent, var(--body-color), var(--body-color));
+    pointer-events: auto;
 }
 
 .nav {
@@ -19,6 +20,7 @@
 .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
+    pointer-events: auto;
 }
 
 .nav__list {
@@ -36,6 +38,7 @@
     transition: .3s;
     border-radius: 16px;
     padding: 6px;
+    pointer-events: auto;
 }
 
 .nav__icon,

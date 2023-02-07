@@ -7,6 +7,7 @@
     flex-direction: column;
     overflow: hidden;
     z-index: -10;
+    pointer-events: all;
 }
 
 .background .row {
@@ -19,6 +20,17 @@
     transform: rotate(-30deg);
     top: -50%;
     left: -25%;
+    z-index: -10;
+}
+
+.smooth-end {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, var(--body-color), var(--body-color));;
+    min-height: 100px;
+    z-index: -10;
 }
 
 .icon-line {
@@ -27,12 +39,13 @@
     padding: 0 5px;
     user-select: none;
     cursor: default;
+    pointer-events: all;
 }
 
 .icon-line:hover {
     transition: 0s;
-    color: var(--title-color);
-    filter: drop-shadow(0 0 1rem var(--title-color));
+    color: #ffef74;
+    filter: drop-shadow(0 0 1rem #ffef74);
 }
 
 .background .row div {

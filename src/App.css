@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -68,6 +69,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  pointer-events: none;
 }
 
 html {
@@ -106,6 +108,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  pointer-events: auto;
 }
 
 img {
@@ -155,12 +158,12 @@ img {
   border-radius: 1rem;
   font-weight: var(--font-medium);
   border: 2px solid var(--container-color);
+  pointer-events: auto;
 }
 
 .button:hover {
-  color: var(--title-color);
-  background-color: var(--container-color);
-  border: 2px solid var(--title-color);
+  background-color: var(--title-color-dark);
+  border: 2px solid var(--title-color-dark);
 }
 
 .button__icon {
