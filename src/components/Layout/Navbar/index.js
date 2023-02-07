@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className='nav container'>
             <NavLink exact='True' className={isActive =>
                 "nav__logo" + (!isActive ? " unselected" : "")
-                } to='/'>Orhan</NavLink>
+                } to='/'>© Orhan Ozbasaran</NavLink>
 
             <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                 <ul className='nav__list'>

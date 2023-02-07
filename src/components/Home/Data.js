@@ -1,6 +1,6 @@
 import './index.scss';
 import 'animate.css';
-import AnimatedLetters from '../AnimatedLetters';
+import AnimatedLetters from './AnimatedLetters';
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
