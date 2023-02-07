@@ -1,13 +1,17 @@
-import './index.css';
+import './index.scss';
 import Navbar from '../Navbar';
 import Background from '../Background';
-import Resume from '../Resume';
+import Home from '../Home';
+import About from '../About';
 
 const Layout = () => {
     return <>
         <Navbar/>
-        <Background/>
-        <Resume/>
+        <main className='main'>
+            <Background/>
+            <Home/>
+            <About/>
+        </main>
     </>
 }
 

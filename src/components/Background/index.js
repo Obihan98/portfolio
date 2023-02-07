@@ -1,3441 +1,3368 @@
-import './index.css'
+import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserSecret, faBarcode, faBoxArchive, faBug, faBugSlash, faCircleNodes, faCode, faCodeBranch, faCodeCommit, faCodeCompare, faCodeFork, faCodePullRequest, faFile, faFileLines, faFilter, faFolder, faFolderOpen, faGears, faKeyboard, faNetworkWired, faQrcode, faSitemap, faTerminal, faWindowRestore } from '@fortawesome/free-solid-svg-icons'
 
 
 const Background = () => {
     return <>
-    <section>
+    <section className='background'>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-            </div>
-            <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>                
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>                
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>                
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>                
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>     
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>           
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>           
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>           
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>           
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>           
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>           
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>                
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
                 
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>                
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
             </div>
         </div>
         <div className='row'>
             <div>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
             <div>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
-                <i><FontAwesomeIcon icon={faCodeCompare}/></i>
-                <i><FontAwesomeIcon icon={faUserSecret}/></i>
-                <i><FontAwesomeIcon icon={faNetworkWired}/></i>
-                <i><FontAwesomeIcon icon={faCodeFork}/></i>
-                <i><FontAwesomeIcon icon={faSitemap}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faFile}/></i>
-                <i><FontAwesomeIcon icon={faFilter}/></i>
-                <i><FontAwesomeIcon icon={faBugSlash}/></i>
-                <i><FontAwesomeIcon icon={faBarcode}/></i>
-                <i><FontAwesomeIcon icon={faBoxArchive}/></i>
-                <i><FontAwesomeIcon icon={faFolder}/></i>
-                <i><FontAwesomeIcon icon={faCircleNodes}/></i>
-                <i><FontAwesomeIcon icon={faFolderOpen}/></i>
-                <i><FontAwesomeIcon icon={faCodeCommit}/></i>
-                <i><FontAwesomeIcon icon={faGears}/></i>
-                <i><FontAwesomeIcon icon={faCode}/></i>
-                <i><FontAwesomeIcon icon={faBug}/></i>
-                <i><FontAwesomeIcon icon={faCodeBranch}/></i>
-                <i><FontAwesomeIcon icon={faKeyboard}/></i>
-                <i><FontAwesomeIcon icon={faQrcode}/></i>
-                <i><FontAwesomeIcon icon={faWindowRestore}/></i>
-                <i><FontAwesomeIcon icon={faTerminal}/></i>
-                <i><FontAwesomeIcon icon={faCodePullRequest}/></i>
-                <i><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCompare}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faUserSecret}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faNetworkWired}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeFork}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faSitemap}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFile}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFilter}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBugSlash}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBarcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBoxArchive}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolder}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCircleNodes}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFolderOpen}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeCommit}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faGears}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faBug}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodeBranch}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faKeyboard}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faQrcode}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faWindowRestore}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faTerminal}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faCodePullRequest}/></i>
+                <i className='icon-line'><FontAwesomeIcon icon={faFileLines}/></i>
             </div>
         </div>
     </section>
