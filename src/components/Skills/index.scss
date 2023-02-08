@@ -30,6 +30,8 @@
 
 .skills__group {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
     align-items: flex-start;
     row-gap: 1rem;
     pointer-events: auto;
@@ -43,7 +45,7 @@
 
 .skills .bx-badge-check {
     font-size: 1rem;
-    color: var(--title-color);
+    color: #ffe100;
     pointer-events: auto;
 }
 
@@ -57,4 +59,44 @@
  .skills__level {
     font-size: var(--tiny-font-size);
     pointer-events: auto;
- }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .skills__container {
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+}
+
+
+/* For medium devices */
+@media screen and (max-width: 576px) {
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__content {
+        padding: 1.5rem;
+    }
+
+    .skills__group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 430px) {
+    .skills__box {
+        column-gap: 1.25rem;
+    }
+
+    .skills__container {
+        column-gap: 0.25rem;
+    }
+
+    .skills_name {
+        font-size: var(--small-font-size);
+    }
+}
