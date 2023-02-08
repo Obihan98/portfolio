@@ -1,6 +1,17 @@
 import './index.scss'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_tiyqmmr', 'template_6focqz5', form.current, 'bO5YtfDurWMrL3JvQ')
+        e.target.reset();
+    };
+    
     return <>
      <section className='contact section' id='contact'>
         <h2 className='section__title'>Get in touch</h2>
@@ -45,9 +56,9 @@ const Contact = () => {
 
 
             <div className='contact__content'>
-                <h3 className='contact__title'>Write me your project</h3>
+                <h3 className='contact__title'>Send me a message</h3>
                 <div className='contact__info'>
-                    <form className='contact__form'>
+                    <form ref={form} onSubmit={sendEmail} className='contact__form'>
                         <div className='contact__form-div'>
                             <label className='contact__form-tag'>Name</label>
                             <input 
@@ -67,12 +78,12 @@ const Contact = () => {
                             />
                         </div>
                         <div className='contact__form-div contact__form-area'>
-                            <label className='contact__form-tag'>Project</label>
-                            <textarea name='project' cols={"30"} rows={"10"} className="contact__form-input" placeholder='Write your project'></textarea>
+                            <label className='contact__form-tag'>Message</label>
+                            <textarea name='project' cols={"30"} rows={"10"} className="contact__form-input" placeholder='Write your message'></textarea>
                         </div>
-                        <a href='' className='button button--flex'>
+                        <button className='button button--flex'>
                             Send Message<i class="uil uil-message send__icon"></i>
-                        </a>
+                        </button>
                     </form>
                 </div>
             </div>

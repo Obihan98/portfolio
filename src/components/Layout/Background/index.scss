@@ -1,7 +1,7 @@
 .background {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 400vh;
     background: var(--body-color);
     display: block;
     flex-direction: column;
@@ -29,7 +29,7 @@
     width: 100%;
     bottom: 0;
     background: linear-gradient(to bottom, transparent, var(--body-color), var(--body-color));;
-    min-height: 100px;
+    min-height: 10px;
     z-index: -10;
 }
 
@@ -101,5 +101,11 @@ section .row:nth-child(even) div:nth-child(2){
     }
     100% {
         transform: translateX(0%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .background {
+        display: none;
     }
 }
