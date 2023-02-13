@@ -11,10 +11,10 @@ const Services = () => {
     return <>
         <section className='services section' id='services'>
             <h2 className='section__title'>
-                Experience
+                Projects
             </h2>
             <span className='section__subtitle'>
-                My professional life
+                My contributions
             </span>  
 
 
@@ -102,6 +102,141 @@ const Services = () => {
                                 <li className='services__model-service'>
                                     <i className='uil uil-check-circle services__model-icon'></i>
                                     <p className='sevices__model-info'>Manage user accounts and grant individual access to system and software.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='services__content'>
+                    <div>
+                        <i className='uil uil-edit services__icon'></i>
+                        <h3 className='services__title'>
+                            Computer Science
+                            <br/>
+                            Instructor
+                        </h3>
+                    </div>
+
+                    <span className='services__button' onClick={() => handleToggle(1)}>
+                        View More
+                        <i className='uil uil-arrow-right services__button-icon'></i>
+                    </span>
+
+                    <div className='services__model'>
+                        <div className='services__model-content'>
+                            <i className='uil uil-times services__model-close' onClick={() => handleToggle(0)}></i>
+                            <h3 className='services__model-title'>
+                                Old World Village Foundation
+                                <br/>
+                                Huntington Beach, CA
+                            </h3>
+                            <p className='services__model-description'>
+                                Computer Science Instructor
+                            </p>
+
+                            <ul className='services__model_services grid'>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Instruct 10 8th grade students on Python, C++, HTML, CSS, JavaScript, including basic science and mathematics,</p>
+                                </li>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Set up and deploy equipment, and accounts for students to use in class,</p>
+                                </li>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Organize games and collaborative discussions to engage students in an active learning.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='services__content'>
+                    <div>
+                        <i className='uil uil-edit services__icon'></i>
+                        <h3 className='services__title'>
+                            Computer Science
+                            <br/>
+                            Instructor
+                        </h3>
+                    </div>
+
+                    <span className='services__button' onClick={() => handleToggle(1)}>
+                        View More
+                        <i className='uil uil-arrow-right services__button-icon'></i>
+                    </span>
+
+                    <div className='services__model'>
+                        <div className='services__model-content'>
+                            <i className='uil uil-times services__model-close' onClick={() => handleToggle(0)}></i>
+                            <h3 className='services__model-title'>
+                                Old World Village Foundation
+                                <br/>
+                                Huntington Beach, CA
+                            </h3>
+                            <p className='services__model-description'>
+                                Computer Science Instructor
+                            </p>
+
+                            <ul className='services__model_services grid'>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Instruct 10 8th grade students on Python, C++, HTML, CSS, JavaScript, including basic science and mathematics,</p>
+                                </li>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Set up and deploy equipment, and accounts for students to use in class,</p>
+                                </li>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Organize games and collaborative discussions to engage students in an active learning.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='services__content'>
+                    <div>
+                        <i className='uil uil-edit services__icon'></i>
+                        <h3 className='services__title'>
+                            Computer Science
+                            <br/>
+                            Instructor
+                        </h3>
+                    </div>
+
+                    <span className='services__button' onClick={() => handleToggle(1)}>
+                        View More
+                        <i className='uil uil-arrow-right services__button-icon'></i>
+                    </span>
+
+                    <div className='services__model'>
+                        <div className='services__model-content'>
+                            <i className='uil uil-times services__model-close' onClick={() => handleToggle(0)}></i>
+                            <h3 className='services__model-title'>
+                                Old World Village Foundation
+                                <br/>
+                                Huntington Beach, CA
+                            </h3>
+                            <p className='services__model-description'>
+                                Computer Science Instructor
+                            </p>
+
+                            <ul className='services__model_services grid'>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Instruct 10 8th grade students on Python, C++, HTML, CSS, JavaScript, including basic science and mathematics,</p>
+                                </li>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Set up and deploy equipment, and accounts for students to use in class,</p>
+                                </li>
+                                <li className='services__model-service'>
+                                    <i className='uil uil-check-circle services__model-icon'></i>
+                                    <p className='sevices__model-info'>Organize games and collaborative discussions to engage students in an active learning.</p>
                                 </li>
                             </ul>
                         </div>

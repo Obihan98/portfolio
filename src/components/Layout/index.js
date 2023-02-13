@@ -4,8 +4,8 @@ import Background from './Background';
 import Home from '../Home';
 import About from '../About';
 import Skills from '../Skills';
-import Services from '../Services';
-import Qualifications from '../Qualifications';
+import Projects from '../Projects';
+import EducationExperience from '../EducationExperience';
 import Contact from '../Contact';
 
 const Layout = () => {
@@ -16,8 +16,8 @@ const Layout = () => {
             <Home/>
             <About/>
             <Skills/>
-            <Services/>
-            <Qualifications/>
+            <Projects/>
+            <EducationExperience/>
             <Contact/>
         </main>
     </>

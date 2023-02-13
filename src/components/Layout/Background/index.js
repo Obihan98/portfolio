@@ -9610,7 +9610,6 @@ const Background = () => {
             </div>
         </div>
     </section>
-    <div className='smooth-end'></div>
     </>
 }
 

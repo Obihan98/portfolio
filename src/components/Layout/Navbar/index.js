@@ -36,13 +36,13 @@ const Navbar = () => {
                     <li className='nav__item'>
                         <NavLink exact='True' className='nav__link' activeclassname='selected' to='/Projects'>
                             <i className='uil uil-briefcase-alt nav__icon'></i>
-                            Services
+                            Projects
                         </NavLink>
                     </li>   
                     <li className='nav__item'>
                         <NavLink exact='True' className='nav__link' activeclassname='selected' to='/Projects'>
                             <i className='uil uil-scenery nav__icon'></i>
-                            Portfolio
+                            Education / Experience
                         </NavLink>
                     </li>  
                     <li className='nav__item'>

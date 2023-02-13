@@ -12,7 +12,7 @@ const Qualifications = () => {
     return <>
         <section className='qualification section' id='services'>
             <h2 className='section__title'>
-                Qualifications
+                Education / Experience
             </h2>
             <span className='section__subtitle'>
                 What I offer
