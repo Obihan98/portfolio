@@ -1,9 +1,10 @@
-import { NavLink } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link"
 import React, {useState} from 'react';
 import './index.scss'
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const[Toggle, setToggle] = useState(true);
+    const[Toggle, setToggle] = useState(false);
 
     
     return <> 
@@ -16,40 +17,40 @@ const Navbar = () => {
             <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                 <ul className='nav__list'>
                     <li className='nav__item'>
-                        <NavLink exact='True' className='nav__link' activeclassname='selected' to='/'>
+                        <HashLink exact='True' className='nav__link' activeclassname='selected' to='/#home' smooth={true}>
                             <i className='uil uil-estate nav__icon'></i>
                             Home
-                        </NavLink>
+                        </HashLink>
                     </li>
                     <li className='nav__item'>
-                        <NavLink exact='True' className='nav__link' activeclassname='selected' to='/About'>
+                        <HashLink exact='True' className='nav__link' activeclassname='selected' to='/#about' smooth={true}>
                             <i className='uil uil-user nav__icon'></i>
                             About
-                        </NavLink>
+                        </HashLink>
                     </li>
                     <li className='nav__item'>
-                        <NavLink exact='True' className='nav__link' activeclassname='selected' to='/Contact'>
+                        <HashLink exact='True' className='nav__link' activeclassname='selected' to='/#skills' smooth={true}>
                             <i className='uil uil-file-alt nav__icon'></i>
                             Skills
-                        </NavLink>
+                        </HashLink>
                     </li>
                     <li className='nav__item'>
-                        <NavLink exact='True' className='nav__link' activeclassname='selected' to='/Projects'>
+                        <HashLink exact='True' className='nav__link' activeclassname='selected' to='/#projects' smooth={true}>
                             <i className='uil uil-briefcase-alt nav__icon'></i>
                             Projects
-                        </NavLink>
+                        </HashLink>
                     </li>   
                     <li className='nav__item'>
-                        <NavLink exact='True' className='nav__link' activeclassname='selected' to='/Projects'>
+                        <HashLink exact='True' className='nav__link' activeclassname='selected' to='/#edex' smooth={true}>
                             <i className='uil uil-scenery nav__icon'></i>
-                            Education / Experience
-                        </NavLink>
+                            Experience
+                        </HashLink>
                     </li>  
                     <li className='nav__item'>
-                        <NavLink exact='True' className='nav__link' activeclassname='selected' to='/Projects'>
+                        <HashLink exact='True' className='nav__link' activeclassname='selected' to='/#contact' smooth={true}>
                             <i className='uil uil-message nav__icon'></i>
                             Contact
-                        </NavLink>
+                        </HashLink>
                     </li>                  
                 </ul>
 

@@ -1,11 +1,11 @@
 import './index.scss';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link"
 
 
 const ScrollDown = () => {
     return <>
     <div className='home__scroll'>
-        <NavLink exact='True' className='home__scroll-button button--flex' activeclassname='selected' to='/About'>
+        <HashLink exact='True' className='home__scroll-button button--flex' activeclassname='selected' to='/#about'>
             <svg
                 width="32px"
                 height="32px"
@@ -43,7 +43,7 @@ const ScrollDown = () => {
             </svg>
             <span className='home__scroll-name'>Scroll down</span>
             <i className='uil uil-arrow-down home__scroll-arrow'></i>
-        </NavLink>
+        </HashLink>
     </div>
     </>
 }
